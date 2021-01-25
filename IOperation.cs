@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace TP2.Cons
 {
-    interface IOperation
+    public interface IOperation
     {
-        public void TurnOn()
-        {
-            
-        }
+        void TurnOn();
+
+        void TurnOff();
+
+        string GetState();
+
+
     }
 }
