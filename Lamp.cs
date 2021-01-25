@@ -3,7 +3,8 @@
     public class Lamp : IOperation
     {
         private byte conso { get; set; }
-        private bool isOn { get; set; }
+        public bool isOn { get; set; }
+
         public void TurnOn()
         {
             if (!isOn)
@@ -16,7 +17,7 @@
                 return;
             }
         }
-        void TurnOff()
+        public void TurnOff()
         {
             if (isOn)
             {
@@ -27,7 +28,7 @@
                 return;
             }
         }
-        string GetState()
+        public string GetState()
         {
             if (isOn)
             {

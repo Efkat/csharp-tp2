@@ -8,6 +8,7 @@ namespace TP2.Cons
 {
     public interface IOperation
     {
+        bool isOn { get; set; }
         void TurnOn();
 
         void TurnOff();
